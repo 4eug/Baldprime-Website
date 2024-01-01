@@ -10,18 +10,18 @@ export default function Footer() {
               <span className="self-center text-[30px] leading-[38px] font-extrabold whitespace-nowrap">BAAF</span>
             </a>
             <div className="flex mt-8 space-x-[32px] text-[16px] font-semibold text-[#0E0F11]">
-              <a href="#" className="" target="_blank" rel="noopener noreferrer">linkedIn</a>
-              <a href="#" className="" target="_blank" rel="noopener noreferrer">facebook</a>
-              <a href="#" className="" target="_blank" rel="noopener noreferrer">twitter</a>
-              <a href="mailto:your.email@example.com" className="" target="_blank" rel="noopener noreferrer">email</a>
+              <a href="https://www.linkedin.com/in/baidprime-auditing-and-accounting-firm-a8435b2a6/" target="_blank" rel="noopener noreferrer">linkedIn</a>
+              <a href="https://www.instagram.com/baidprime/"  target="_blank" rel="noopener noreferrer">facebook</a>
+              <a href="https://twitter.com/baidprime57099"  target="_blank" rel="noopener noreferrer">twitter</a>
+              <a href="mailto:baidprime019@gmail.com" target="_blank" rel="noopener noreferrer">email</a>
             </div>
           </div>
         </div>
 
-        <hr className="mt-8 mb-10 border-[#ECEDEF]" />
+        <hr className="mt-8 mb-10 border-[#ECEDEF]"/>
 
         <div className="sm:flex sm:items-center sm:justify-between">
-          <p className="text-sm text-[#AFB3BB]">© 2024 BaidPrime Auditing & Accounting Services Ltd. All rights reserved.</p>
+          <p className="text-sm text-[#AFB3BB]">&copy; {new Date().getFullYear()} BaidPrime Auditing & Accounting Services Ltd. All rights reserved.</p>
         </div>
       </div>
     </section>
