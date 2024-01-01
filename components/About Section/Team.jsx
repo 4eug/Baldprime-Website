@@ -4,7 +4,7 @@ import TeamCard from '../cards/teamCard';
 const Team = () => {
   // Team members data
   const teamMembers = [
-    { id: 1, name: 'Stephen De-Graft Baidu', title: 'Managing Partner', imageSrc: 'https://cdn.rareblocks.xyz/collection/celebration/images/blog/1/blog-post-1.jpg' },
+    { id: 1, name: 'Stephen De-Graft Baidu', title: 'Managing Partner', imageSrc: '/Stephen.png' },
     { id: 2, name: 'Stephen De-Graft Baidu', title: 'Managing Partner', imageSrc: 'https://cdn.rareblocks.xyz/collection/celebration/images/blog/1/blog-post-1.jpg' }
   ];
 
