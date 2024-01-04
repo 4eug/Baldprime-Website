@@ -5,7 +5,8 @@ import TeamCard from '../components/cards/teamCard';
 import ContactCard from '../components/cards/contactCard';
 import { useEffect } from 'react';
 
-export default function Page() {
+export default function Home() {
+  
 
     useEffect(() => {
         // Function to handle smooth scrolling
@@ -60,28 +61,27 @@ export default function Page() {
 
     // Sample data for each blog card
   const blogData = [
-    { id: 1, title: 'Financial Audit', imageSrc: '/Financial Audit.png', content: 'In-depth financial statement audits to ensure accuracy and compliance with regulatory standards' },
-    { id: 2, title: 'Forensic Audit', imageSrc: '/Forensic Audit.png', content: 'Investigative auditing to uncover fraud, resolve disputes, and ensure legal compliance.' },
-    { id: 3, title: 'Accounting Services', imageSrc: '/Account Service.png', content: 'Comprehensive accounting solutions, from bookkeeping to advanced financial reporting.' },
-    { id: 4, title: 'Taxation', imageSrc: '/Taxation.png', content: 'Expert tax services including planning, compliance, and advisory for individuals and corporations.' },
-    { id: 5, title: 'Financial Statements', imageSrc: '/Financial Statement.png', content: 'Precise preparation of financial reports for informed decision-making and compliance.' },
-    { id: 6, title: 'General Tax & Legal Services', imageSrc: '/General Tax & Legal.png', content: 'Efficient management of tax filings and GRA portal operations to ensure timely compliance.' },
-    { id: 7, title: 'Business Advisory', imageSrc: '/Business advisory.png', content: 'Strategic consulting services to drive business growth and adapt to market changes.' },
-    { id: 8, title: 'General Tax & Legal Services', imageSrc: '/General Tax & Legal.png', content: 'Efficient management of tax filings and GRA portal operations to ensure timely compliance.' },
-    { id: 9, title: 'Global Transfer Pricing', imageSrc: '/Global Transfer.png', content: 'Strategic advice on cross-border transactions to comply with international tax laws.' },
+    { id: 1, title: 'Auditing', imageSrc: '/Financial Audit.png', content1: 'Forensic', content2: 'Financial', content3: 'Operational', content4: 'Compliance', content5: 'Information System System'  },
+    { id: 2, title: 'Accounting', imageSrc: '/Forensic Audit.png', content1: 'Financial Statements', content2: 'Book Keeping', content3: 'Forensic Accounting', content4: 'Financial Consulting', content5: 'Assurance Accounting' },
+    { id: 3, title: 'Taxes', imageSrc: '/Account Service.png', content1: 'Company Income Tax', content2: 'Personal Income Tax', content3: 'Value Added Tax (VAT)', content4: 'Pay-As-You-Earn (PAYE)', content5: 'Withholding Taxes', },
+    { id: 4, title: 'Inventory Management', imageSrc: '/Taxation.png', content1: 'Stock Taking', content2: 'Perpetual Inventory System' },
   ];
 
   // Team members data
   const teamMembers = [
     { id: 1, name: 'Stephen De-Graft Baidu', title: 'Managing Partner', imageSrc: '/Stephen.png' },
-    { id: 2, name: 'Stephen De-Graft Baidu', title: 'Managing Partner', imageSrc: 'https://cdn.rareblocks.xyz/collection/celebration/images/blog/1/blog-post-1.jpg' }
+    { id: 2, name: 'Oliver Kumordzie', title: 'Audit Partner', imageSrc: '/Stephen.png' },
+    { id: 3, name: 'Mathias Kwei', title: 'Audit Associate', imageSrc: '/Stephen.png' },
+    { id: 4, name: 'Rosemary Dadzie', title: 'Head, Taxation & Assurance', imageSrc: '/Stephen.png'},
+    { id: 5, name: 'Lawrence Kokuvi Afodoanyi', title: 'Forensic Audit', imageSrc: '/Stephen.png'},
   ];
 
   // Address
   const addressData = [
-    { id: 1, title: 'Enquiry', message: 'How can we help you?', info: 'sales@baidprime.com' },
-    { id: 2, title: 'Address', message: 'Visit our head office', info: 'Plot C11 Tetteh Quarshie Interchange Spintex Rd, Accra' },
-    { id: 3, title: 'Call our team', message: 'Mon - Fri from 8am to 5pm Sat from 10am to 2pm', info: '233 20 002 24123' }
+    { id: 1, title: 'Enquiry', message: 'How can we help you?', info: 'baidprime019@gmail.com' },
+    { id: 2, title: 'Location', message: 'Visit our head office', info: 'Loc. Dansoman Junction, Behind UMB Bank -  Accra-Ghana' },
+    { id: 3, title: 'Call our team', message: 'Mon - Sat from 8am to 5pm', info: '+233 24 327 6202' },
+    { id: 4, title: 'Box Address', message: '', info: 'P.O.Box ABK 149, Abeka Lapaz 51 - Mampon Okai Street GA -427-2823 Greater Accra - Ghana'}
   ];
 
 
@@ -109,7 +109,7 @@ export default function Page() {
 
     {/* Hero Section */}
     <section className="bg-img">
-      <div className="grid max-w-screen-xl gap-8 lg:grid-cols-12 mx-auto px-6 py-32">
+      <div className="grid max-w-screen-xl gap-8 lg:grid-cols-12 mx-auto px-6 pt-40 pb-32">
         <div className="lg:col-span-7 self-center">
           <a href="#" id="baidprime-link" className="inline-flex justify-between gap-1 items-center py-1 px-2 mb-7 text-sm text-white bg-[#f9fafa3e] border border-[#ECEDEF] rounded-full" role="alert">
             <span className="text-sm font-medium">BaidPrime Auditing & Accounting Firm</span>
@@ -144,9 +144,9 @@ export default function Page() {
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Our services we offer for you</h2>
           </div>
         </div>
-        <div className="grid grid-cols-1 mt-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 lg:max-w-full lg:mt-16">
+        <div className="grid grid-cols-1 mt-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 lg:max-w-full lg:mt-16">
           {blogData.map((blog) => (
-            <BlogCard key={blog.id} title={blog.title} imageSrc={blog.imageSrc} content={blog.content} />
+            <BlogCard key={blog.id} title={blog.title} imageSrc={blog.imageSrc} content1={blog.content1} content2={blog.content2} content3={blog.content3} content4={blog.content4} content5={blog.content5} showLearnMore={blog.id === 3} />
           ))}
         </div>
       </div>
@@ -156,17 +156,17 @@ export default function Page() {
     <section class="bg-[#0A0A0A] text-white py-10 lg:py-20 border-b border-[#36393F]">
     <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         <p className="mt-4 text-base leading-relaxed text-gray-600 lg:mx-0">About Us</p>
-        <h2 class="text-3xl font-semibold leading-[44px]lg:text-4xl">How we work at BaidPrime</h2>
+        <h2 class="text-3xl font-semibold leading-[44px] lg:text-4xl">How we work at BaidPrime</h2>
 
         <div class="flow-root mt-12 font-normal text-[18px] leading-[28px]">
             <p>
-                BaidPrime Auditing & Accounting Services Ltd anchors its reputation on the unshakable pillars of ethical accounting and transparency. We stand as guardians of integrity in the financial world, meticulously ensuring that every ledger, every report, and every piece of financial advice is steeped in honesty and moral clarity. 
+                BaidPrime Auditing & Accounting Firm Ltd anchors its reputation on the unshakable pillars of ethical accounting and transparency. We stand as guardians of integrity in the financial world, meticulously ensuring that every ledger, every report, and every piece of financial advice is steeped in honesty and moral clarity.  
             </p>
             <p className='mt-4'>
                 Our ethos of ethical accounting transcends mere compliance with regulations; it is about fostering trust and delivering peace of mind to our clients. In a landscape where financial complexities often obscure clarity, BaidPrime is a beacon of truth, providing services that clients can rely on without reservation.
             </p> 
             <p className='mt-4'>
-            Our professionals are not just experts in their fields; they are champions of an ethical approach that protects and enhances the financial health and success of our clients. At BaidPrime Auditing & Accounting Services Ltd, we don’t just account for your finances; we account for our actions with unwavering ethical commitment.
+                Our professionals are not just experts in their fields; they are champions of an ethical approach that protects and enhances the financial health and success of our clients. At BaidPrime Auditing & Accounting Firm Ltd, we don’t just account for your finances; we account for our actions with unwavering ethical commitment.
             </p>
         </div>
 
@@ -184,7 +184,7 @@ export default function Page() {
         <p className="mt-4 text-base leading-relaxed text-gray-600 lg:mx-0">Team</p>
         <h2 className="text-3xl font-semibold leading-[44px] lg:text-4xl">Team behind BaidPrime</h2>
 
-        <div className="flex flex-col mt-12 gap-[48px] sm:flex-row">
+        <div className="flex flex-col mt-12 gap-[56px] sm:flex-row">
           {teamMembers.map(({ id, name, title, imageSrc }) => (
             <TeamCard key={id} name={name} title={title} imageSrc={imageSrc} />
           ))}
@@ -200,7 +200,7 @@ export default function Page() {
 
         <section className="py-10 bg-white sm:py-16 lg:py-20">
           <div className="px-1 mx-auto lg:px-1 max-w-7xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 lg:gap-x-8 xl:gap-x-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 lg:gap-x-6 xl:gap-x-14">
               {addressData.map((address) => (
                 <ContactCard key={address.id} title={address.title} message={address.message} info={address.info} />
               ))}
