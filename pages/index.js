@@ -160,7 +160,7 @@ export default function Home() {
 
         <div class="flow-root mt-12 font-normal text-[18px] leading-[28px]">
             <p>
-                BaidPrime Auditing & Accounting Firm Ltd anchors its reputation on the unshakable pillars of ethical accounting and transparency. We stand as guardians of integrity in the financial world, meticulously ensuring that every ledger, every report, and every piece of financial advice is steeped in honesty and moral clarity.  
+                BaidPrime Auditing & Accounting Firm anchors its reputation on the unshakable pillars of ethical accounting and transparency. We stand as guardians of integrity in the financial world, meticulously ensuring that every ledger, every report, and every piece of financial advice is steeped in honesty and moral clarity.  
             </p>
             <p className='mt-4'>
                 Our ethos of ethical accounting transcends mere compliance with regulations; it is about fostering trust and delivering peace of mind to our clients. In a landscape where financial complexities often obscure clarity, BaidPrime is a beacon of truth, providing services that clients can rely on without reservation.
