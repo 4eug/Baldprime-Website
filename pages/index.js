@@ -153,12 +153,12 @@ export default function Home() {
     </section>
 
     {/* About Section */}
-    <section class="bg-[#0A0A0A] text-white py-10 lg:py-20 border-b border-[#36393F]">
-    <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+    <section className="bg-[#0A0A0A] text-white py-10 lg:py-20 border-b border-[#36393F]">
+    <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         <p className="mt-4 text-base leading-relaxed text-gray-600 lg:mx-0">About Us</p>
-        <h2 class="text-3xl font-semibold leading-[44px] lg:text-4xl">How we work at BaidPrime</h2>
+        <h2 className="text-3xl font-semibold leading-[44px] lg:text-4xl">How we work at BaidPrime</h2>
 
-        <div class="flow-root mt-12 font-normal text-[18px] leading-[28px]">
+        <div className="flow-root mt-12 font-normal text-[18px] leading-[28px]">
             <p>
                 BaidPrime Auditing & Accounting Firm anchors its reputation on the unshakable pillars of ethical accounting and transparency. We stand as guardians of integrity in the financial world, meticulously ensuring that every ledger, every report, and every piece of financial advice is steeped in honesty and moral clarity.  
             </p>
