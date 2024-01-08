@@ -1,13 +1,14 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
 import Meta from "../components/utils/meta";
 import Head from 'next/head';
-import BlogCard from '../components/cards/blogCard';
 import TeamCard from '../components/cards/teamCard';
 import ContactCard from '../components/cards/contactCard';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Services from "../components/services";
 
 export default function Home() {
   
-
     useEffect(() => {
         // Function to handle smooth scrolling
         const handleSmoothScroll = (e, targetId) => {
@@ -58,6 +59,8 @@ export default function Home() {
           }
         };
       }, []);
+    
+  
 
     // Sample data for each blog card
   const blogData = [
@@ -69,11 +72,11 @@ export default function Home() {
 
   // Team members data
   const teamMembers = [
-    { id: 1, name: 'Stephen De-Graft Baidu', title: 'Managing Partner', imageSrc: '/Stephen.png' },
-    { id: 2, name: 'Oliver Kumordzie', title: 'Audit Partner', imageSrc: '/Stephen.png' },
-    { id: 3, name: 'Mathias Kwei', title: 'Audit Associate', imageSrc: '/Stephen.png' },
-    { id: 4, name: 'Rosemary Dadzie', title: 'Head, Taxation & Assurance', imageSrc: '/Stephen.png'},
-    { id: 5, name: 'Lawrence Kokuvi Afodoanyi', title: 'Forensic Audit', imageSrc: '/Stephen.png'},
+    { id: 1, name: 'Stephen De-Graft Baidu', title: 'Managing Partner', imageSrc: '/Stephen De.png' },
+    { id: 2, name: 'Oliver Kumordzie', title: 'Audit Partner', imageSrc: '/Oliver.png' },
+    { id: 3, name: 'Mathias Kwei', title: 'Audit Associate', imageSrc: '/Stephen De.png' },
+    { id: 4, name: 'Rosemary Dadzie', title: 'Head, Taxation & Assurance', imageSrc: '/Rosemary.png'},
+    { id: 5, name: 'Lawrence Kokuvi Afodoanyi', title: 'Forensic Audit', imageSrc: '/Lawrence.png'},
   ];
 
   // Address
@@ -136,44 +139,39 @@ export default function Home() {
     </section>
 
     {/* Service Section */}
-    <section id="service-section" className="py-10 bg-[#F9FAFA] sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="flex items-end justify-between">
-          <div className="flex-1 text-left lg:text-left">
-            <p className="mt-4 text-base leading-relaxed text-gray-600 lg:mx-0">Services</p>
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Our services we offer for you</h2>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 mt-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 gap-x-16 lg:max-w-full lg:mt-16">
-          {blogData.map((blog) => (
-            <BlogCard key={blog.id} title={blog.title} imageSrc={blog.imageSrc} content1={blog.content1} content2={blog.content2} content3={blog.content3} content4={blog.content4} content5={blog.content5} showLearnMore={blog.id === 3} />
-          ))}
-        </div>
-      </div>
-    </section>
+    <Services/>
+    
 
-    {/* About Section */}
-    <section className="bg-[#0A0A0A] text-white py-10 lg:py-20 border-b border-[#36393F]">
+    {/* About Section Vision */}
+    <section className="bg-[#0A0A0A] text-white py-10 lg:py-20">
     <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         <p className="mt-4 text-base leading-relaxed text-gray-600 lg:mx-0">About Us</p>
-        <h2 className="text-3xl font-semibold leading-[44px] lg:text-4xl">How we work at BaidPrime</h2>
+        <h2 className="text-3xl font-semibold leading-[44px] lg:text-4xl">Our Vision</h2>
 
         <div className="flow-root mt-12 font-normal text-[18px] leading-[28px]">
             <p>
-                BaidPrime Auditing & Accounting Firm anchors its reputation on the unshakable pillars of ethical accounting and transparency. We stand as guardians of integrity in the financial world, meticulously ensuring that every ledger, every report, and every piece of financial advice is steeped in honesty and moral clarity.  
+            At BaidPrime Auditing & Accounting Firm, we are a team of passionate professionals committed to providing our clients with an unmatched level of financial expertise in accounting, tax, and audit services.   
             </p>
             <p className='mt-4'>
-                Our ethos of ethical accounting transcends mere compliance with regulations; it is about fostering trust and delivering peace of mind to our clients. In a landscape where financial complexities often obscure clarity, BaidPrime is a beacon of truth, providing services that clients can rely on without reservation.
-            </p> 
-            <p className='mt-4'>
-                Our professionals are not just experts in their fields; they are champions of an ethical approach that protects and enhances the financial health and success of our clients. At BaidPrime Auditing & Accounting Firm Ltd, we don’t just account for your finances; we account for our actions with unwavering ethical commitment.
+            Our dedication to meeting the financial needs of our clients is unparalleled, and we strive to provide the highest level of service to help our clients succeed. Whether you need help with financial statements, financial reporting, budgeting, or forecasting, we've got you covered.
             </p>
         </div>
+    </div>
+    </section>
 
-        <div className='mt-12'>
-        <a href="#" className="bg-[#0055FF] h-[40px] inline-flex items-center text-white text-base rounded-[2px] font-semibold px-4 py-4">
-              Contact us
-        </a>
+    {/* About Section Mission */}
+    <section className="bg-[#0A0A0A] text-white py-10 lg:py-20 border-b border-[#36393F]">
+    <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+        <p className="mt-4 text-base leading-relaxed text-gray-600 lg:mx-0">About Us</p>
+        <h2 className="text-3xl font-semibold leading-[44px] lg:text-4xl">Our Mission</h2>
+
+        <div className="flow-root mt-12 font-normal text-[18px] leading-[28px]">
+            <p>
+            Inspire Confidence. Empower Change. By inspiring confidence in our people, clients and society, we help empower the change needed to solve the toughest challenges and lead the way forward.
+            </p>
+            <p className='mt-4'>
+            Empowered by our Values, our people are our greatest strength. Together, we are building a values-led organization of the future. For Better.
+            </p>
         </div>
     </div>
     </section>
