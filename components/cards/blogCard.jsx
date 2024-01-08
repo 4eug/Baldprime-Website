@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import { useState } from "react"
 
-const BlogCard = ({ title, imageSrc, content1, content2, content3, content4, content5, showLearnMore  }) => {
+const BlogCard = ({ title, imageSrc, content1, content2, content3, content4, content5, content6, showLearnMore, }) => {
+  const [open, setOpen] = useState(false)
+
   return (
     <div>
       <div className="block aspect-w-4 aspect-h-3">
@@ -20,8 +22,9 @@ const BlogCard = ({ title, imageSrc, content1, content2, content3, content4, con
         {content3 && <li>{content3}</li>}
         {content4 && <li>{content4}</li>}
         {content5 && <li>{content5}</li>}
+        {content6 && <li>{content6}</li>}
       </ul>
-      {showLearnMore && <p className='pl-6 text-[#266EFF] text-sm font-semibold'>Learn more</p>}
+      {showLearnMore && <a href="" className='pl-6 text-[#266EFF] text-sm font-semibold' onClick={() => setOpen(true)} >Learn more</a>}
     </div>
   );
 };
