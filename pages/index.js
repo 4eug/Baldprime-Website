@@ -155,7 +155,7 @@ export default function Home() {
           {/* {blogData.map((blog) => (
             <BlogCard key={blog.id} title={blog.title} imageSrc={blog.imageSrc} content1={blog.content1} content2={blog.content2} content3={blog.content3} content4={blog.content4} content5={blog.content5} showLearnMore={blog.id === 3} />
           ))} */}
-          <BlogCard title="Auditing" imageSrc="/Auditing.png" content1="Forensic" content2="Financial" content3="Operational" content4="Compliance" content5="Information System System" />
+          <BlogCard title="Auditing" imageSrc="/Auditing.png" content1="Forensic" content2="Financial" content3="Operational" content4="Compliance" content5="Information System" />
 
           <BlogCard title="Accounting" imageSrc="/Accounting.png" content1="Financial Statements" content2="Book Keeping" content3="Outsourced Accounting" content4="Forensic Accounting" content5="Financial Consulting" content6="Assurance Accounting" />
 
