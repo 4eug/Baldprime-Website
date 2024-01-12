@@ -148,7 +148,7 @@ export default function Home() {
         <div className="flex items-end justify-between">
           <div className="flex-1 text-left lg:text-left">
             <p className="mt-4 text-base leading-relaxed text-gray-600 lg:mx-0">Services</p>
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Our services we offer for you</h2>
+            <h2 className="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Our services We offer for you</h2>
           </div>
         </div>
         <div className="grid grid-cols-1 mt-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 lg:max-w-full lg:mt-16">
