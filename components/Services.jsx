@@ -49,11 +49,11 @@ export default function Services() {
       <button onClick={() => setOpen(true)} className='pl-6 text-[#266EFF] text-sm font-semibold' >Learn more</button>
     </div>
 
-    <Modal open={open} onClose={() => setOpen(false)}>
+    {/* <Modal open={open} onClose={() => setOpen(false)}>
         <div className="w-full">
           <div className="mx-4 my-4">
            <ul className='pl-6 text-gray-600 list-disc'>
-          <li>Company Income Tax</li>
+           <li>Company Income Tax</li>
            <li>Personal Income Tax</li>
            <li>Value Added Tax (VAT)</li>
            <li>Pay-As-You-Earn (PAYE) Tax</li>
@@ -74,7 +74,7 @@ export default function Services() {
           </div>
        
         </div>
-      </Modal>
+      </Modal> */}
 
           <BlogCard title="Statutory & Legal Filings" imageSrc="/Taxation.png" content1="GRA Tax Filings" content2="SSNIT Filings" content3="Ghana Tourism Authority"/>
 
