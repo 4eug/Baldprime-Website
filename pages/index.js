@@ -190,10 +190,9 @@ export default function Home() {
            <li>Company Income Tax</li>
            <li>Personal Income Tax</li>
            <li>Value Added Tax (VAT)</li>
-           <li>Pay-As-You-Earn (PAYE)</li>
+           <li>Pay-As-You-Earn (PAYE) Tax</li>
+           <li>Withholding Taxes</li>
            <li>Global Transfers Pricing</li>
-           <li>Capital Gain Tax</li>
-           <li>Property Tax</li>
            <li>Growth & Sustainability Tax</li>
            <li>Capital Gain Tax</li>
            <li>Property Tax</li>
