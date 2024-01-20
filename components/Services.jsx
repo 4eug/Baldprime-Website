@@ -53,7 +53,7 @@ export default function Services() {
         <div className="w-full">
           <div className="mx-4 my-4">
            <ul className='pl-6 text-gray-600 list-disc'>
-           <li>Company Income Tax</li>
+          <li>Company Income Tax</li>
            <li>Personal Income Tax</li>
            <li>Value Added Tax (VAT)</li>
            <li>Pay-As-You-Earn (PAYE) Tax</li>
