@@ -81,6 +81,8 @@ export default function Home() {
     { id: 3, name: 'Mathias Kwei', title: 'Audit Associate', imageSrc: '/Mathias.png' },
     { id: 4, name: 'Rosemary Dadzie', title: 'Head, Taxation & Assurance', imageSrc: '/Rosemary.png'},
     { id: 5, name: 'Lawrence Kokuvi Afodoanyi', title: 'Forensic Audit', imageSrc: '/Lawrence.png'},
+    { id: 6, name: 'George Asamoah ', title: 'Senior Partner', imageSrc: '/George.png'},
+    { id: 7, name: 'Rubben Ansah', title: 'Audit Partner', imageSrc: '/Rubben.png'},
   ];
 
   // Address
@@ -148,7 +150,7 @@ export default function Home() {
         <div className="flex items-end justify-between">
           <div className="flex-1 text-left lg:text-left">
             <p className="mt-4 text-base leading-relaxed text-gray-600 lg:mx-0">Services</p>
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">We offer</h2>
+            <h2 className="text-3xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">Our services We offer for you</h2>
           </div>
         </div>
         <div className="grid grid-cols-1 mt-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 lg:max-w-full lg:mt-16">
@@ -258,7 +260,7 @@ export default function Home() {
         <p className="mt-4 text-base leading-relaxed text-gray-600 lg:mx-0">Team</p>
         <h2 className="text-3xl font-semibold leading-[44px] lg:text-4xl">Team behind BaidPrime</h2>
 
-        <div className="flex flex-col mt-12 gap-[56px] sm:flex-row">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-[56px] lg:gap-x-6 xl:gap-x-14">
           {teamMembers.map(({ id, name, title, imageSrc }) => (
             <TeamCard key={id} name={name} title={title} imageSrc={imageSrc} />
           ))}
